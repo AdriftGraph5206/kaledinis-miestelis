@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.as{
+    background-image: url("map.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.round{
+    border-radius: 50%;
+    background-color:aquamarine;
+    position: absolute;
+    left: 20%;
+    width: 4%;
+    height: 4%;
+}
