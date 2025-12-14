@@ -7,20 +7,14 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;background-image: url("map.jpg");
+    top: 0;
+    background-image: url("images/Background/map.jpg");
     background-size: cover;
   background-repeat: no-repeat;
 }
 
-.pyro_engi{
-width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-image: url("Red_ctf.jpg");
-    background-size: cover;
-  background-repeat: no-repeat;
-}
+
+/* Icons */
 
 .medicRed, .heavyRed, .spyRed, .pyroRed, .sniperRed, .demomanRed, .scoutRed, .soldierRed, .engineerRed, .medicBlue, .heavyBlue, .spyBlue, .pyroBlue, .sniperBlue, .demomanBlue, .scoutBlue, .soldierBlue, .engineerBlue{
     border-radius: 50%;
@@ -31,113 +25,108 @@ width: 100%;
 }
 
 .medicRed{
-    background-image: url("20130809194339!Medic_emblem_RED.png");
     left: 58%;
     top: 40%;
 }
 
 .heavyRed{
-    background-image: url("HeavyEmbRED.png");
     left: 59.7%;
     top: 40%;
 }
 
 .spyRed{
-    background-image: url("spyemb.png");
+    background-image: url("images/emblems/spyemb.png");
     left: 69%;
     top: 31%;
 }
 
 .pyroRed{
-    background-image: url("PyroEmbRED.png");
     left: 22%;
     top: 77%;
 }
 
 .sniperRed{
-    background-image: url("SniperEmbRED.png");
+    background-image: url("images/emblems/SniperEmbRED.png");
     left: 46%;
     top: 44%;
 }
 
 .demomanRed{
-    background-image: url("DemomanEmbRED.png");
     left: 75%;
     top: 64%;
-
 }
 
 .scoutRed{
-    background-image: url("ScoutEmbRED.png");
     left: 34%;
     top: 39%;
 }
 
 .soldierRed{
-    background-image: url("SoldierEmbRED.png");
     left: 73.4%;
     top: 64%;
 }
 
 .engineerRed{
-    background-image: url("EngineerEmbRED.png");
     left: 24.4%;
     top: 77%;
 }
 
 .medicBlue{
-background-image: url("MedicEmbBLU.png");
+background-image: url("images/emblems/MedicEmbBLU.png");
 right: 13%;
 bottom: 26%;
 }
 
 .heavyBlue{
-background-image: url("HeavyEmbBLU.png");
+background-image: url("images/emblems/HeavyEmbBLU.png");
 right: 14.5%;
 bottom: 26%;
 } 
 
 .spyBlue{
-background-image: url("SpyEmbBLU.png");
+background-image: url("images/emblems/SpyEmbBLU.png");
 right: 7%;
 bottom: 36%;
 } 
 
 .pyroBlue{
-background-image: url("PyroEmbBLU.png");
+background-image: url("images/emblems/PyroEmbBLU.png");
     right: 11%;
     bottom: 77%;
 } 
 
 .sniperBlue{
-background-image: url("SniperEmbBLU.png");
+background-image: url("images/emblems/SniperEmbBLU.png");
     right: 36%;
     top: 44%;
 } 
 
 .demomanBlue{
-background-image: url("DemomanEmbBLU.png");
+background-image: url("images/emblems/DemomanEmbBLU.png");
 right: 7%;
 bottom: 30%;
 } 
 
 .scoutBlue{
-background-image: url("ScoutEmbBLU.png");
+background-image: url("images/emblems/ScoutEmbBLU.png");
 right: 10%;
 bottom: 30%;
 } 
 
 .soldierBlue{
-background-image: url("SoldierEmbBLU.png");
+background-image: url("images/emblems/SoldierEmbBLU.png");
 right: 10%;
 bottom: 30%;
 }
 
 .engineerBlue{
-    background-image: url("EngineerEmbBLU.png");
+    background-image: url("images/emblems/EngineerEmbBLU.png");
     right: 13%;
     bottom: 77%;
 }
+
+
+/* conv with red pyro and engi */
 
 .redPyro{
     position: absolute;
@@ -153,3 +142,48 @@ bottom: 30%;
     height: 35%;
 }
 
+/* conv with red scout */
+
+.redScout{
+    position: absolute;
+    left: 23%;
+    top: 27%;
+    height: 60%;
+}
+
+/* conv with red sniper */
+
+.redSniper{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    height: 60%;
+}
+
+
+/* conv with red heavy and medic */
+.redHeavy{
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    height: 120%;
+}
+
+.redMedic{
+    position: absolute;
+    left: 35%;
+    top: 1%;
+}
+
+/* conv with red Soldier and Demoman */
+.redDemoman{
+    position: absolute;
+    left: 40%;
+    top: 2%;
+}
+
+.redSoldier{
+    position: absolute;
+    left: 60%;
+    top: 1%;
+}
