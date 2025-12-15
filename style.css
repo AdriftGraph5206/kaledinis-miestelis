@@ -11,6 +11,7 @@ body{
     background-image: url("images/Background/map.jpg");
     background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 
@@ -22,6 +23,7 @@ body{
     width:  40px;
     height: 40px;
     background-size: cover;
+    z-index: 2;
 }
 
 .medicRed{
@@ -35,7 +37,7 @@ body{
 }
 
 .spyRed{
-    background-image: url("images/emblems/spyemb.png");
+    
     left: 69%;
     top: 31%;
 }
@@ -46,7 +48,6 @@ body{
 }
 
 .sniperRed{
-    background-image: url("images/emblems/SniperEmbRED.png");
     left: 46%;
     top: 44%;
 }
@@ -90,13 +91,11 @@ bottom: 36%;
 } 
 
 .pyroBlue{
-background-image: url("images/emblems/PyroEmbBLU.png");
     right: 11%;
     bottom: 77%;
 } 
 
 .sniperBlue{
-background-image: url("images/emblems/SniperEmbBLU.png");
     right: 36%;
     top: 44%;
 } 
@@ -120,7 +119,7 @@ bottom: 30%;
 }
 
 .engineerBlue{
-    background-image: url("images/emblems/EngineerEmbBLU.png");
+    
     right: 13%;
     bottom: 77%;
 }
@@ -133,6 +132,7 @@ bottom: 30%;
     left: 35%;
     top: 40%;
     height: 20%;
+    z-index: 2;
 }
 
 .redEngi{
@@ -140,6 +140,7 @@ bottom: 30%;
     left: 40%;
     top: 35%;
     height: 35%;
+    z-index: 2;
 }
 
 /* conv with red scout */
@@ -149,6 +150,7 @@ bottom: 30%;
     left: 23%;
     top: 27%;
     height: 60%;
+    z-index: 2;
 }
 
 /* conv with red sniper */
@@ -158,6 +160,7 @@ bottom: 30%;
     left: 40%;
     top: 20%;
     height: 60%;
+    z-index: 2;
 }
 
 
@@ -167,12 +170,14 @@ bottom: 30%;
     left: 40%;
     top: 2%;
     height: 120%;
+    z-index: 2;
 }
 
 .redMedic{
     position: absolute;
     left: 35%;
     top: 1%;
+    z-index: 2;
 }
 
 /* conv with red Soldier and Demoman */
@@ -180,10 +185,47 @@ bottom: 30%;
     position: absolute;
     left: 40%;
     top: 2%;
+    z-index: 2;
 }
 
 .redSoldier{
     position: absolute;
     left: 60%;
     top: 1%;
+    z-index: 2;
+}
+
+.txt{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    left: 30%;
+    background-Color: black;
+    color: white;
+    font-size: 30px;
+    border: white 1px solid;
+    bottom: 0;
+    z-index: 0;
+}
+
+.p{
+    position: absolute;
+    left: 4%;
+}
+
+.redSpy{
+    position: absolute;
+    left: 40%;
+    top: 2%;
+    z-index: 2;
+}
+
+.back{
+    position: absolute;
+    width:  40px;
+    height: 40px;
+    background-size: cover;
+    z-index: 2;
+    background-color: red;
+    color: white;
 }
