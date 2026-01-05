@@ -10,7 +10,7 @@ body{
     top: 0;
     background-image: url("images/Background/map.jpg");
     background-size: cover;
-  background-repeat: no-repeat;
+
   z-index: 1;
 }
 
@@ -72,23 +72,6 @@ body{
     top: 77%;
 }
 
-.medicBlue{
-background-image: url("images/emblems/MedicEmbBLU.png");
-right: 13%;
-bottom: 26%;
-}
-
-.heavyBlue{
-background-image: url("images/emblems/HeavyEmbBLU.png");
-right: 14.5%;
-bottom: 26%;
-} 
-
-.spyBlue{
-background-image: url("images/emblems/SpyEmbBLU.png");
-right: 7%;
-bottom: 36%;
-} 
 
 .pyroBlue{
     right: 11%;
@@ -100,30 +83,13 @@ bottom: 36%;
     top: 44%;
 } 
 
-.demomanBlue{
-background-image: url("images/emblems/DemomanEmbBLU.png");
-right: 7%;
-bottom: 30%;
-} 
 
-.scoutBlue{
-background-image: url("images/emblems/ScoutEmbBLU.png");
-right: 10%;
-bottom: 30%;
-} 
-
-.soldierBlue{
-background-image: url("images/emblems/SoldierEmbBLU.png");
-right: 10%;
-bottom: 30%;
-}
 
 .engineerBlue{
     
     right: 13%;
     bottom: 77%;
 }
-
 
 /* conv with red pyro and engi */
 
@@ -216,8 +182,34 @@ bottom: 30%;
 .redSpy{
     position: absolute;
     left: 40%;
-    top: 2%;
+    top: 40%;
     z-index: 2;
+    height: 50%;
+}
+
+.BluePyro{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: 2;
+    height: 60%;
+}
+
+.BlueEngineer{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    z-index: 2;
+    height: 60%;
+
+}
+
+.BlueSniper{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: 2;
+    height: 70%;
 }
 
 .back{
@@ -228,4 +220,31 @@ bottom: 30%;
     z-index: 2;
     background-color: red;
     color: white;
+    z-index: 0;
+}
+
+.test2{
+    position: absolute;
+    width:  40px;
+    height: 40px;
+    background-size: cover;
+    z-index: 2;
+    background-color: red;
+    color: white;
+    z-index: 3;
+    left: 97.5%;
+    bottom: 0;
+}
+
+.txt9{
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    left: 30%;
+    background-Color: black;
+    color: white;
+    font-size: 30px;
+    border: white 1px solid;
+    bottom: 0;
+    z-index: 0;
 }

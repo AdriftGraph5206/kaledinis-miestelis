@@ -1,12 +1,24 @@
-
+  let RedPyro_engi = false
+    let redScout = false
+    let RedSniper = false
+    let RedMedic_Heavy = false
+    let RedSpy = false
+    let RedDemoman_Soldier = false
+    let BlueSniper = false
+    let BlueEngi_Pyro = false
 
 // opens the part where red pyro and engie in the room
 function open1(){
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_ctf.jpg')"
 document.getElementById('redEngi').src = "images/red_team/red_engi.png"
 document.getElementById('redPyro').src = "images/red_team/Pyro.png"
+document.getElementById('redPyro').style.zIndex = "3"
+document.getElementById('redEngi').style.zIndex = "3"
+document.getElementById('back').style.zIndex = "3"
+
+
       document.getElementById('pyroRed').style.zIndex = "0"
-      document.getElementById('engineerRed').style.zIndex = "0"
+     document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
      document.getElementById('medicRed').style.zIndex = "0"
@@ -14,17 +26,9 @@ document.getElementById('redPyro').src = "images/red_team/Pyro.png"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
-      document.getElementById('redPyro').style.zIndex = "3"
-     document.getElementById('redEngi').style.zIndex = "3"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
 //convo with red pyro and engie
@@ -65,7 +69,7 @@ let step = 0;
        else {
         document.getElementById('test').style.zIndex = '0'
         text.innerHTML = '';
-        state = 0
+        RedPyro_engi = true
       }
     }
 
@@ -75,6 +79,10 @@ function open2(){
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_spawn.jpg')"
 document.getElementById('redScout').src = "images/red_team/ScoutRed.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('redScout').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -83,15 +91,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
 //convo with red scout
@@ -125,7 +127,7 @@ function conversation2() {
        else {
         document.getElementById('conv2').style.zIndex = '0'
         text.innerHTML = '';
-
+        redScout = true
       }
     }
 
@@ -134,6 +136,10 @@ function conversation2() {
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_balcony.jpg')"
 document.getElementById('redSniper').src = "images/red_team/SniperRed.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('redSniper').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -142,15 +148,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
 //convo with red sniper
@@ -184,7 +184,7 @@ function conversation3() {
        else {
         document.getElementById('conv3').style.zIndex = '0'
         text.innerHTML = '';
-
+        RedSniper = true
       }
     }
 
@@ -195,6 +195,11 @@ document.getElementById('map').style.backgroundImage = "url('images/Background/R
 document.getElementById('redMedic').src = "images/red_team/MedicRed.png"
 document.getElementById('redHeavy').src = "images/red_team/HeavyRed.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('redMedic').style.zIndex = "3"
+document.getElementById('redHeavy').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -203,15 +208,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
     //convo with red scout
@@ -245,7 +244,7 @@ function conversation4() {
        else {
         document.getElementById('conv4').style.zIndex = '0'
         text.innerHTML = '';
-
+        RedMedic_Heavy = true
       }
     }
 
@@ -257,6 +256,11 @@ document.getElementById('map').style.backgroundImage = "url('images/Background/R
 document.getElementById('redSoldier').src = "images/red_team/RedSoldier.png"
 document.getElementById('redDemoman').src = "images/red_team/RedDemoman.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('redSoldier').style.zIndex = "3"
+document.getElementById('redDemoman').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -265,15 +269,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
     //convo with red scout
@@ -307,7 +305,7 @@ function conversation5() {
        else {
         document.getElementById('conv5').style.zIndex = '0'
         text.innerHTML = '';
-
+        RedDemoman_Soldier = true
       }
     }
 
@@ -317,6 +315,10 @@ function conversation5() {
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_sold_demo.jpg')"
 document.getElementById('redSpy').src = "images/red_team/RedSpy.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('redSpy').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -325,15 +327,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
     //convo with red spy
@@ -367,7 +363,7 @@ function conversation6() {
        else {
         document.getElementById('conv6').style.zIndex = '0'
         text.innerHTML = '';
-
+        RedSpy = true
       }
     }
 
@@ -376,9 +372,14 @@ function conversation6() {
                 function open7(){
               step = 0;
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_sold_demo.jpg')"
-document.getElementById('BlueEngineer').src = "images/blue_team/BlueEngineer.png"
+document.getElementById('BlueEngineer').src = "images/blue_team/BlueEngi.png"
 document.getElementById('BluePyro').src = "images/blue_team/BluePyro.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('BlueEngineer').style.zIndex = "3"
+document.getElementById('BluePyro').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -387,15 +388,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
 }
 
     //convo with red spy
@@ -429,7 +424,7 @@ function conversation7() {
        else {
         document.getElementById('conv7').style.zIndex = '0'
         text.innerHTML = '';
-
+        BlueEngi_Pyro = true
       }
     }
 
@@ -439,6 +434,10 @@ function conversation7() {
 document.getElementById('map').style.backgroundImage = "url('images/Background/Red_sold_demo.jpg')"
 document.getElementById('BlueSniper').src = "images/blue_team/BlueSniper.png"
 document.getElementById('pyroRed').style.zIndex = "0"
+document.getElementById('back').style.zIndex = "3"
+document.getElementById('BlueSniper').style.zIndex = "3"
+
+
       document.getElementById('engineerRed').style.zIndex = "0"
       document.getElementById('scoutRed').style.zIndex = "0"
       document.getElementById('sniperRed').style.zIndex = "0"
@@ -447,15 +446,9 @@ document.getElementById('pyroRed').style.zIndex = "0"
       document.getElementById('demomanRed').style.zIndex = "0"
       document.getElementById('spyRed').style.zIndex = "0"
       document.getElementById('heavyRed').style.zIndex = "0"
-      document.getElementById('medicBlue').style.zIndex = "0"
-      document.getElementById('heavyBlue').style.zIndex = "0"
-      document.getElementById('spyBlue').style.zIndex = "0"
       document.getElementById('pyroBlue').style.zIndex = "0"
-      document.getElementById('sniperBlue').style.zIndex = "0"
-      document.getElementById('demomanBlue').style.zIndex = "0"
-      document.getElementById('scoutBlue').style.zIndex = "0"
-      document.getElementById('soldierBlue').style.zIndex = "0"
       document.getElementById('engineerBlue').style.zIndex = "0"
+      document.getElementById('sniperBlue').style.zIndex = "0"
       
 }
 
@@ -491,13 +484,15 @@ function conversation8() {
        else {
         document.getElementById('conv8').style.zIndex = '0'
         text.innerHTML = '';
-
+        BlueSniper = true
       }
     }
 
     function back1(){
       // map change
       document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
+document.getElementById('back').style.zIndex = "0"  
+
 
       // Icons to show
       document.getElementById('pyroRed').style.zIndex = "3"
@@ -509,216 +504,51 @@ function conversation8() {
       document.getElementById('demomanRed').style.zIndex = "3"
       document.getElementById('spyRed').style.zIndex = "3"
       document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
       document.getElementById('pyroBlue').style.zIndex = "3"
       document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
       document.getElementById('engineerBlue').style.zIndex = "3"
 
       // hide characters
       document.getElementById('redPyro').style.zIndex = "0"
       document.getElementById('redEngi').style.zIndex = "0"
-    }
-    function back2(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      // hide characters
       document.getElementById('redScout').style.zIndex = "0"
-    }
-
-    function back3(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      //hide character
       document.getElementById('redSniper').style.zIndex = "0"
-    }
-
-    function back4(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      //hide character
       document.getElementById('redMedic').style.zIndex = "0"
       document.getElementById('redHeavy').style.zIndex = "0"
-    }
-
-    function back5(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      // hide character
       document.getElementById('redSoldier').style.zIndex = "0"
       document.getElementById('redDemoman').style.zIndex = "0"
-    }
-
-    function back6(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      // hide character
-      document.getElementById('redSpy').style.zIndex = "0"
-    }
-
-    function back7(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
-
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      // hide character
+            document.getElementById('redSpy').style.zIndex = "0"
       document.getElementById('BluePyro').style.zIndex = "0"
       document.getElementById('BlueEngineer').style.zIndex = "0"
+      document.getElementById('BlueSniper').style.zIndex = "0"
     }
+  
 
-        function back8(){
-       // map change
-      document.getElementById('map').style.backgroundImage = 'url("images/Background/map.jpg")';
+    // last part
 
-      // Icons to show
-      document.getElementById('pyroRed').style.zIndex = "3"
-      document.getElementById('engineerRed').style.zIndex = "3"
-      document.getElementById('scoutRed').style.zIndex = "3"
-      document.getElementById('sniperRed').style.zIndex = "3"
-      document.getElementById('medicRed').style.zIndex = "3"
-      document.getElementById('soldierRed').style.zIndex = "3"
-      document.getElementById('demomanRed').style.zIndex = "3"
-      document.getElementById('spyRed').style.zIndex = "3"
-      document.getElementById('heavyRed').style.zIndex = "3"
-      document.getElementById('medicBlue').style.zIndex = "3"
-      document.getElementById('heavyBlue').style.zIndex = "3"
-      document.getElementById('spyBlue').style.zIndex = "3"
-      document.getElementById('pyroBlue').style.zIndex = "3"
-      document.getElementById('sniperBlue').style.zIndex = "3"
-      document.getElementById('demomanBlue').style.zIndex = "3"
-      document.getElementById('scoutBlue').style.zIndex = "3"
-      document.getElementById('soldierBlue').style.zIndex = "3"
-      document.getElementById('engineerBlue').style.zIndex = "3"
-
-      // hide character
-      
+   function test(){ 
+ if(RedPyro_engi = true && redScout  && RedSniper && RedMedic_Heavy && RedSpy && RedDemoman_Soldier  && BlueSniper && BlueEngi_Pyro){
+  console.log("Visi true")
+  document.getElementById('map').style.backgroundImage = "url('images/Background/BackgroundComp.png')"
+  document.getElementById('engineerRed').style.zIndex = "0"
+      document.getElementById('scoutRed').style.zIndex = "0"
+      document.getElementById('sniperRed').style.zIndex = "0"
+     document.getElementById('medicRed').style.zIndex = "0"
+      document.getElementById('soldierRed').style.zIndex = "0"
+      document.getElementById('demomanRed').style.zIndex = "0"
+      document.getElementById('spyRed').style.zIndex = "0"
+      document.getElementById('heavyRed').style.zIndex = "0"
+      document.getElementById('pyroBlue').style.zIndex = "0"
+      document.getElementById('engineerBlue').style.zIndex = "0"
       document.getElementById('sniperBlue').style.zIndex = "0"
-    }
+      document.getElementById('pyroRed').style.zIndex = "0"
+ }
+ else{
+    document.getElementById('txt9').style.zIndex = "5"
+ }
+}
+
+
+function close7(){
+  document.getElementById('txt9').style.zIndex = "0"
+}
